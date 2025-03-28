@@ -1,0 +1,142 @@
+/* start visible */
+:root{
+    --main-color:rgba(145, 25, 107, 0.788);
+    --secondary-color:#ef61bb;
+}
+/* end visible */
+/*  start global rules */
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width: 1200px) {
+   div{
+        width: 1170px;
+    }
+}
+   /* Small */
+@media (max-width: 768px) {
+    div {
+  width: 750px;
+}
+.data-inbox{
+    width: fit-content;
+}
+}
+/* Medium */
+@media (max-width: 992px) {
+    div {
+  width: 970px;
+}
+.data-inbox{
+    width: 245px;
+}
+}
+body{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* start navbar  */
+.header{
+    background-color: rgba(230, 112, 171, 0.192);
+    display: flex;
+    justify-content:space-between;
+}
+.header .logo{
+    width: 40px;
+    padding:  40px;
+}
+
+.header .list ul{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 30px;
+    list-style: none;
+   font-size: 30px;
+   font-weight: 500;
+
+}
+.header .list ul,a{
+    text-decoration: none;
+    color:var(--main-color);
+}
+.header .list a:hover{
+    transition: 0.3s;
+    font-size: 40px;
+}
+.card{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.card .card-box{
+    display: inline-block;
+    width: 250px;
+    height: 340px;
+    margin: 30px;
+    margin-left: 45%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px var(--main-color);
+    background-image: url(/images/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.data-inbox{
+    background-color: #d193ba77;
+
+}
+.card .card-box .data-inbox h2, p{
+    color: #500434be;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    transition: 0.5s;
+}
+.card .card-box img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    
+}
+.card .card-box img:hover{
+    width: 130px;
+    height: 130px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+button{
+    background-color: #ef61bb;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #ef61bb;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 85px;
+    height: 35px;
+}
+/* end navbar  */
