@@ -1,7 +1,7 @@
 /* start visible */
 :root{
     --main-color:rgba(145, 25, 107, 0.788);
-    --secondary-color:#ef61bb;
+    --secondary-color: #500434be;
 }
 /* end visible */
 /*  start global rules */
@@ -41,11 +41,14 @@ body{
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    
+    background-image: url(/images/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* start navbar  */
 .header{
-    background-color: rgba(230, 112, 171, 0.192);
+    background-color: rgba(204, 195, 200, 0.548);
     display: flex;
     justify-content:space-between;
 }
@@ -81,24 +84,33 @@ body{
 .card .card-box{
     display: inline-block;
     width: 250px;
-    height: 340px;
+    height: 400px;
     margin: 30px;
     margin-left: 45%;
     border: 5px solid var(--secondary-color);
     border-radius: 15px;
     text-align: center;
     box-shadow: 0px 0px 15px 0px var(--main-color);
-    background-image: url(/images/back2.jpg);
+    background-image: linear-gradient(to right bottom,#300420, #ce028375, #500434f8);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.data-inbox{
-    background-color: #d193ba77;
 
+.data-inbox{
+    /* background-color:  rgba(204, 195, 200, 0.548); */
+    margin-bottom: 5px;
+}
+.data-inbox i{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+.data-inbox i:hover{
+color: #0f080df8;
 }
 .card .card-box .data-inbox h2, p{
-    color: #500434be;
+    color: #fff;
     font-weight: 800;
     line-height: 1.5;
     text-align: center;
